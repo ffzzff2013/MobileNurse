@@ -1,0 +1,31 @@
+
+<div id="wrap">
+	<div id = "TourContent" data-role="content">
+		<div class="segmented-control ui-bar-d">
+			<div data-role="controlgroup" data-type="horizontal" data-mini="true">
+				<a data-role="button" id="dialyTourSeg" class="ui-control-active" onclick="tourPage.selectTourSegment('1')">日常巡视</a>
+				<a data-role="button" id="liquidTourSeg" class="ui-control-inactive" onclick="tourPage.selectTourSegment('2')">输液巡视</a>
+				<a data-role="button" id="tourRecSeg" class="ui-control-inactive" onclick="tourPage.selectTourSegment('3')">巡视记录</a>
+			</div>
+        </div>	
+        <div id="base-info-grid" class="ui-grid-d" style="margin:1%">
+			<div class="ui-block-a">
+				<div class="ui-bar ui-bar-c"><span id="bedIDS"></span></div>
+			</div>
+    		<div class="ui-block-b">
+				<div class="ui-bar ui-bar-c"><span id="pNameS"></span></div>
+			</div>
+     	 	<div class="ui-block-c">
+				<div class="ui-bar ui-bar-c"><span id="pAgeS"></span></div>
+			</div>
+    		<div class="ui-block-d">
+				<div class="ui-bar ui-bar-c"><span id="pSexS"></span></div>
+			</div>
+			<div class="ui-block-e">
+				<div class="ui-bar ui-bar-c"><span id="pIDS"></span></div>
+			</div>
+		</div>
+        <div id = "segmentContent">
+        </div>
+	</div>
+</div>

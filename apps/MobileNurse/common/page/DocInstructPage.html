@@ -1,0 +1,53 @@
+<div id = "sc">
+	<div id="multiColsModelArea"></div>
+	<div id="singleColModelArea">
+		<div id="doctorAdviceListD">
+			<ul data-role="listview" data-theme="f" data-inset="true" style="margin: 1%">
+				<li data-role="list-divider" data-theme="f" style="font-size: 1em">筛选条件</li>
+				<li style="padding:0px">
+					<div data-role="controlgroup" data-type="horizontal" align="center" data-mini="true">
+						<input type="radio" name="instructType" id="instruct0" value="0" onclick="docInstructPage.typeCBClick('instruct0')" data-mini="true" checked="checked"/>
+   	  			  		<label for="instruct0" data-theme="b" data-mini="true">全部医嘱</label>	
+
+  						<input type="radio" name="instructType" id="instruct1" value="0" onclick="docInstructPage.typeCBClick('instruct1')" data-mini="true"/>
+   	    				<label for="instruct1" data-theme="b" data-mini="true">长期医嘱</label>
+
+		       			<input type="radio" name="instructType" id="instruct2" value="0" onclick="docInstructPage.typeCBClick('instruct2')" data-mini="true"/>
+				       	<label for="instruct2" data-theme="b" data-mini="true">临时医嘱</label>
+
+    	   				<input type="radio" name="instructType" id="instruct3" value="0" onclick="docInstructPage.typeCBClick('instruct3')" data-mini="true"/>
+       					<label for="instruct3" data-theme="b" data-mini="true">作废医嘱</label>
+					</div>
+					<div data-role="controlgroup" data-type="horizontal" align="center" data-mini="true">
+  						<input type="checkbox" name="instructDate" id="instruct4" data-mini="true"/>
+       					<label for="instruct4" data-theme="b">今天</label>	
+
+       					<input type="checkbox" name="instructDate" id="instruct5" data-mini="true"/>
+     	 	 			<label for="instruct5" data-theme="b">昨天</label>
+					</div>
+				</li>
+			</ul>
+			<div id = "docAdList"></div>
+		</div>
+		<div id = "doctorAdviceDetailD">
+			<ul id="docAdContent" data-role="listview" data-theme="f" data-inset="true" style="margin: 1%">
+				<li data-role="list-divider" data-theme="f" style="font-size: 1em">医嘱内容</li>
+				<li>病人姓名：<span id="dAdPName"></span></li>
+				<li>医嘱内容：<span id="dAdContent"></span></li>
+				<li>医嘱途径：<span id="dAdWay"></span></li>
+				<li>医嘱剂量：<span id="dAdDose"></span></li>
+				<li>次数&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp：<span id="dAdFrequency"></span></li>
+				<li>医嘱类别：<span id="dAdType"></span></li>
+				<li>执行时间：<span id="dAdExecTime"></span></li>
+				<li>医生姓名：<span id="dAdDName"></span></li>
+			</ul>
+			<ul data-role="listview" data-theme="f" data-inset="true" style="margin:1%">
+				<li data-role="list-divider" data-theme="f" style="font-size: 1em">医嘱记录</li>	
+				<li style="padding:0px">
+					<div id="execRecG" class="ui-grid-b">
+					</div>	
+				</li>											
+			</ul>
+		</div>
+	</div>
+</div>

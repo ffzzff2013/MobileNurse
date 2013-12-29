@@ -1,0 +1,47 @@
+
+/* Stylesheet content from css/SignCollectionPage.css in folder common */
+.ui-grid-a .ui-block-a{
+	margin-left: 5%;
+	font-size: 1.2em;
+	width: 45%;
+}
+
+.ui-grid-a .ui-block-b{
+	margin-rigth: 5%;
+	font-size: 1.2em;
+	width: 45%;
+}
+
+.short-label {
+    width: 10%;
+    font-size: 1.2em;
+ }
+ 
+ .long-label {
+    width: 20%;
+    font-size: 1.2em;
+ }
+ 
+.text-input{	
+    display: inline !important;
+	width: 10% !important;
+	font-size: 1.2em;
+}
+
+.long-text-input{	
+    display: inline !important;
+	width: 40% !important;
+	font-size: 1.2em;
+}
+
+.select-input{
+	margin-left: 5%;
+	font-size: 1.2em;
+	width: 25%;
+}
+
+.ckb-input{
+	margin-left: 15%;
+	font-size: 1.2em;
+	width: 25%;
+}

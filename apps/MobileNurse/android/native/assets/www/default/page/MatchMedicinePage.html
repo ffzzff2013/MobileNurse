@@ -1,0 +1,188 @@
+
+<div id="wrap">
+	<div id="matchMedicineContent">
+		<div id="multiColsModelArea"></div>
+		<div id="singleColModelArea">
+			<ul id = "searchContent" data-role="listview" data-inset="true" data-theme="f" style="margin:1%">
+				<li data-role="list-divider" data-theme="f" style="font-size: 1em">搜索条件</li>
+				<li style="padding:0px">
+					<div class="ui-grid-a">
+						<div class="ui-block-a">
+							<div class="ui-bar ui-bar-e" style="padding-bottom:0px;padding-top:0px">
+								<input type="text" id="patientIDTxt" data-mini="true" placeholder="病人ID"/>
+							</div>
+						</div>
+						<div class="ui-block-b">
+							<div class="ui-bar ui-bar-e" style="padding-bottom:0px;padding-top:0px">
+								<input type="text" id="patientNameTxt" data-mini="true" placeholder="姓名"/>
+							</div>
+						</div>
+						<div class="ui-block-a">
+							<div class="ui-bar ui-bar-e" style="padding-bottom:0px;padding-top:0px">
+								<input type="text" id="fromDate" data-mini="ture" placeholder="开始日期"/>
+							</div>
+						</div>
+						<div class="ui-block-b">
+							<div class="ui-bar ui-bar-e" style="padding-bottom:0px;padding-top:0px">
+								<input type="text" id="toDate" data-mini="ture" placeholder="结束日期"/>
+							</div>
+						</div>
+						<div class="ui-block-a">
+							<div class="ui-bar ui-bar-e" style="padding-bottom:0px;padding-top:0px">
+								<select id="docTypeSelect" data-mini="true" data-native-menu="false">
+									<option value="0">全部医嘱</option>
+									<option value="1">长期医嘱</option>
+									<option value="2">临时医嘱</option>
+									<option value="3">作废医嘱</option>
+								</select>
+							</div>
+						</div>
+						<div class="ui-block-b">
+							<div class="ui-bar ui-bar-e" style="padding-bottom:0px;padding-top:0px">
+								<a data-role="button" data-icon="search" data-iconpos="left" data-mini="true" onclick="matchMedicinePage.searchDocAd()">查找</a>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<div id="base-info-grid" class="ui-grid-d" style="margin:1%">
+				<div class="ui-block-a">
+					<div class="ui-bar ui-bar-c"><span id="bedIDS"></span></div>
+				</div>
+    			<div class="ui-block-b">
+					<div class="ui-bar ui-bar-c"><span id="pNameS"></span></div>
+				</div>
+    	 	 	<div class="ui-block-c">
+					<div class="ui-bar ui-bar-c"><span id="pAgeS"></span></div>
+				</div>
+    			<div class="ui-block-d">
+					<div class="ui-bar ui-bar-c"><span id="pSexS"></span></div>
+				</div>
+				<div class="ui-block-e">
+					<div class="ui-bar ui-bar-c"><span id="pIDS"></span></div>
+				</div>
+			</div>
+			<div id="docAdList">
+				<ul data-role='listview' data-theme='f' data-inset='true' style='margin:1%'>
+					<li data-role='list-divider' data-theme='f'  style="font-size: 1em">医嘱列表</li>
+				</ul>
+			</div>
+			<div id = "doctorAdviceDetailD">
+				<ul id = "docAdContent" data-role="listview" data-theme="f" data-inset="true" style="margin:1%">	
+					<li data-role="list-divider" data-theme="f" style="font-size: 1em">医嘱内容</li>	
+					<li>病人姓名：<span id="dAdPName"></span></li>
+					<li>医嘱内容：<span id="dAdContent"></span></li>
+					<li>医嘱途径：<span id="dAdWay"></span></li>
+					<li>医嘱剂量：<span id="dAdDose"></span></li>
+					<li>次数&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp：<span id="dAdFrequency"></span></li>
+					<li>医嘱类别：<span id="dAdType"></span></li>
+					<li>执行时间：<span id="dAdExecTime"></span></li>
+					<li>医生姓名：<span id="dAdDName"></span></li>
+					<li><div id="matchMedicineD"></div></li>
+				</ul>
+				<ul data-role="listview" data-theme="f" data-inset="true" style="margin:1%">
+					<li data-role="list-divider" data-theme="f" style="font-size: 1em">医嘱记录</li>	
+					<li style="padding:0px">
+						<div id="execRecG" class="ui-grid-b">
+						</div>	
+					</li>											
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+			<!-- <div id="searchCondition" data-role="collapsible-set" data-mini="true" data-theme="c" data-content-theme="b" style="margin:1%;">
+				<div data-role="collapsible" data-collapsed="false">
+					<h1>搜索条件</h1>
+					<div class="ui-grid-a">
+						<div class="ui-block-a">
+							<div class="ui-bar ui-bar-e">
+								<div data-role="fieldcontain" data-mini="true">
+									<label for="patientIDTxt" id="pIDL">病人ID</label>
+									<input type="text" id="patientIDTxt" data-mini="true" placeholder="病人ID"/>
+								</div>
+							</div>
+						</div>
+						<div class="ui-block-b">
+							<div class="ui-bar ui-bar-e">
+								<div data-role="fieldcontain" data-mini="true">
+									<label for="patientNameTxt" id="pNameL">姓名</label>
+									<input type="text" id="patientNameTxt" data-mini="true" placeholder="姓名"/>
+								</div>
+							</div>
+						</div>
+						<div class="ui-block-a">
+							<div class="ui-bar ui-bar-e">
+								<div data-role="fieldcontain" data-mini="true">
+									<label for="fromDate" id="fDateL">起始</label>
+									<input type="text" id="fromDate" data-mini="ture" placeholder="开始日期"/>
+								</div>
+							</div>
+						</div>
+						<div class="ui-block-b">
+							<div class="ui-bar ui-bar-e">
+								<div data-role="fieldcontain" data-mini="true">
+									<label for="toDate" id="tDateL">结束</label>
+									<input type="text" id="toDate" data-mini="ture" placeholder="结束日期"/>
+								</div>
+							</div>
+						</div>
+						<div class="ui-block-a">
+							<div class="ui-bar ui-bar-e">
+								<select id="docTypeSelect" data-mini="true" >
+									<option value="0">全部医嘱</option>
+									<option value="1">长期医嘱</option>
+									<option value="2">临时医嘱</option>
+									<option value="3">作废医嘱</option>
+								</select>
+							</div>
+						</div>
+						<div class="ui-block-b">
+							<div class="ui-bar ui-bar-e">
+								<a data-role="button" data-icon="search" data-iconpos="left" data-mini="true" onclick="matchMedicinePage.searchDocAd()">查找</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="mmList">
+				<div id="base-info-grid" class="ui-grid-d">
+					<div class="ui-block-a">
+						<div class="ui-bar ui-bar-e"><span id="bedIDS"></span></div>
+					</div>
+    				<div class="ui-block-b">
+						<div class="ui-bar ui-bar-e"><span id="pNameS"></span></div>
+					</div>
+      				<div class="ui-block-c">
+						<div class="ui-bar ui-bar-e"><span id="pAgeS"></span></div>
+					</div>
+    				<div class="ui-block-d">
+						<div class="ui-bar ui-bar-e"><span id="pSexS"></span></div>
+					</div>
+					<div class="ui-block-e">
+						<div class="ui-bar ui-bar-e"><span id="pIDS"></span></div>
+					</div>
+				</div>
+				<div id = "docAdList"></div>
+				<div id = "doctorAdviceDetailD">
+					<div id="docAdContent" data-role="collapsible-set" data-theme="c" data-content-theme="a" style="margin:1%;">
+						<div data-role="collapsible" data-collapsed="false">
+							<h1>医嘱内容</h1>	
+							<ul data-role="listview" data-theme="c" data-inset="true">
+								<li>病人姓名：<span id="dAdPName"></span></li>
+								<li>医嘱内容：<span id="dAdContent"></span></li>
+								<li>医嘱途径：<span id="dAdWay"></span></li>
+								<li>医嘱剂量：<span id="dAdDose"></span></li>
+								<li>次数&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp：<span id="dAdFrequency"></span></li>
+								<li>医嘱类别：<span id="dAdType"></span></li>
+								<li>执行时间：<span id="dAdExecTime"></span></li>
+								<li>医生姓名：<span id="dAdDName"></span></li>
+								<li><div id="matchMedicineD"></div></li>
+							</ul>
+						</div>
+					</div>		
+					<div id="execRecG" class="ui-grid-b">
+					</div>
+				</div>
+			</div>
+			 -->

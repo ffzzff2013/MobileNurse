@@ -1,0 +1,438 @@
+
+/* Stylesheet content from css/Common.css in folder common */
+.ui-icon-topbar-slide{
+	background-image:url(../images/ic_topbar_slide.png);
+	background-size:100% 100%;
+}
+.ui-icon-topbar-refresh{
+	background-image:url(../images/ic_topbar_refresh.png);
+	background-size:100% 100%;
+}
+.ui-icon-topbar-return{
+	background-image:url(../images/ic_topbar_return.png);
+	background-size:100% 100%;
+}
+#base-info-grid .ui-block-a{
+	width: 20%;
+}
+#base-info-grid .ui-block-b{
+	width: 25%;
+}
+#base-info-grid .ui-block-c{
+	width: 20%;
+}
+#base-info-grid .ui-block-d{
+	width: 10%;
+}
+#base-info-grid .ui-block-e{
+	width: 25%;
+}
+#base-info-grid .ui-bar{
+	text-align:center;
+	font-size:1em;
+	padding:0px;
+}
+.segmented-control { 
+	text-align:center;
+}
+.segmented-control .ui-controlgroup {
+	margin: 0.2em; 
+}
+.ui-control-active, .ui-control-inactive {
+	border-style: solid;
+}
+.ui-control-active {
+	background: #ff907d;
+	color: white;
+	border-color: #ff907d; 
+}
+.ui-control-inactive { 
+	background: #dddddd;
+	border-color: #dddddd; 
+}
+.ui-page { 
+	-webkit-backface-visibility: hidden;
+}
+#bedListD .ui-grid-a .ui-block-a{
+	margin-left:6%;
+	margin-top:1%;
+	width: 40%
+}
+#bedListD .ui-grid-a .ui-block-b{
+	margin-left:8%;
+	margin-right:6%;
+	margin-top:1%;
+	width: 40%
+}
+#bedListD .ui-grid-b .ui-block-a{
+	margin-left:3%;
+	margin-top:1%;
+	width: 28%;
+}
+#bedListD .ui-grid-b .ui-block-b{
+	margin-left:5%;
+	margin-top:1%;
+	width: 28%
+}
+#bedListD .ui-grid-b .ui-block-c{
+	margin-left:5%;
+	margin-top:1%;
+	margin-right:3%;
+	width: 28%;
+}
+#bedListD .ui-grid-c .ui-block-a{
+	margin-left:4%;
+	margin-top:1%;
+	width: 20%;
+}
+#bedListD .ui-grid-c .ui-block-b{
+	margin-left:4%;
+	margin-top:1%;
+	width: 20%
+}
+#bedListD .ui-grid-c .ui-block-c{
+	margin-left:4%;
+	margin-top:1%;
+	width: 20%;
+}
+#bedListD .ui-grid-c .ui-block-d{
+	margin-left:4%;
+	margin-top:1%;
+	margin-right:4%;
+	width: 20%;
+}
+#bedListD .ui-bar{
+	padding:0px;
+	width:100%;
+}
+/*ID选择器后只能跟一个类选择器*/
+#execRecG .ui-block-a{
+	width: 25%;
+}
+#execRecG .ui-block-b{
+	width: 25%;
+}
+#execRecG .ui-block-c{
+	width: 50%;
+}
+#execRecG .ui-bar{
+	text-align: center;
+	font-size: 1em;
+	padding: 0px;
+	height: 2.5em;
+}
+#ergTitle1 .ui-bar,#ergTitle2 .ui-bar,#ergTitle3 .ui-bar{
+	height: 1.2em;
+}
+#tourRecD .ui-block-a{
+	width: 25%;
+}
+#tourRecD .ui-block-b{
+	width: 50%;
+}
+#tourRecD .ui-block-c{
+	width: 25%;
+}
+#tourRecD .ui-bar{
+	text-align: center;
+	font-size: 1em;
+	height: 2.5em;
+	padding: 0px;
+}
+#tourRecordD .ui-block-a{
+	width: 20%;
+}
+#tourRecordD .ui-block-b{
+	width: 17%;
+}
+#tourRecordD .ui-block-c{
+	width: 20%;
+}
+#tourRecordD .ui-block-d{
+	width: 25%;
+}
+#tourRecordD .ui-block-e{
+	width: 18%;
+}
+#tourRecordD .ui-bar{
+	text-align: center;
+	font-size: 1em;
+	padding: 0px;
+	height: 2.5em;
+}
+#trdTitle1 .ui-bar,#trdTitle2 .ui-bar,#trdTitle3 .ui-bar,#trdTitle4 .ui-bar,#trdTitle5 .ui-bar{
+	height: 1.2em;
+}
+#nurseRecordD .ui-block-a{
+	width: 40%;
+}
+#nurseRecordD .ui-block-b{
+	width: 20%;
+}
+#nurseRecordD .ui-block-c{
+	width: 40%;
+}
+#nurseRecordD .ui-bar{
+	text-align: center;
+	font-size: 0.8em;
+	padding: 0px;
+	height: 2.5em;
+}
+#nrcTitle1 .ui-bar,#nrcTitle2 .ui-bar,#nrcTitle3 .ui-bar{
+	height: 1.2em;
+	font-size: 1em;
+}
+#outInRecD .ui-block-a{
+	width:30%;
+}
+#outInRecD .ui-block-b{
+	width:40%;
+}
+#outInRecD .ui-block-c{
+	width:30%;
+}
+#outInRecD .ui-bar{
+	text-align: center;
+	font-size: 1em;
+	padding: 0px;
+	height: 2.5em;
+}
+#outInRecordD .ui-block-a{
+	width: 20%;
+}
+
+#outInRecordD .ui-block-b{
+	width: 17%;
+}
+
+#outInRecordD .ui-block-c{
+	width: 20%;
+}
+
+#outInRecordD .ui-block-d{
+	width: 25%;
+}
+
+#outInRecordD .ui-block-e{
+	width: 18%;
+}
+#outInRecordD .ui-bar{
+	text-align: center;
+	font-size: 0.8em;
+	padding: 0px;
+	height: 2.5em;
+}
+#oirTitle1 .ui-bar,#oirTitle2 .ui-bar,#oirTitle3 .ui-bar,#oirTitle4 .ui-bar,#oirTitle5 .ui-bar{
+	height: 1.2em;
+	font-size: 1em;
+}
+/*#cureCountContent .ui-grid-a .ui-block-a{
+	width: 30%;
+}
+
+#cureCountContent .ui-grid-a .ui-block-b{
+	width:70%;	
+}
+
+#nureseCountContent .ui-grid-d .ui-block-a{
+	width:20%;
+}
+
+#nureseCountContent .ui-grid-d .ui-block-b{
+	width:15%;
+}
+
+#nureseCountContent .ui-grid-d .ui-block-c{
+	width:15%;
+}
+
+#nureseCountContent .ui-grid-d .ui-block-d{
+	width:25%;
+}
+
+#nureseCountContent .ui-grid-d .ui-block-e{
+	width:25%;
+}*/
+
+
+/*@media all and (min-width: 900px){
+  	#mMedicineDetailContent #docAdContent {
+   	 	width: 425px;
+    	float: left;
+   	 	margin-right: 50px;
+  	}
+  	#mMedicineDetailContent #executeRecord {
+  		margin: 1%;
+    	width: 425px;
+    	float: left;
+  	}
+  	
+  	#executeContent #scanResContent {
+   	 	width: 425px;
+    	float: left;
+   	 	margin-right: 50px;
+  	}
+  	#executeContent #docAdContent {
+  		margin: 1%;
+    	width: 425px;
+    	float: left;
+    	margin-right: 50px;
+  	}
+  	#executeContent #executeRecord {
+  		margin: 1%;
+    	width: 425px;
+    	float: left;
+  	}
+  	
+  	#tourContent #tCCol {
+   	 	width: 425px;
+    	float: right;
+   	 	margin-right: 50px;
+  	}
+  	#tourContent #tRCol {
+  		margin: 1%;
+    	width: 425px;
+    	float: left;
+  	}
+  	
+  	#liquidContent .firstPart {
+   	 	width: 425px;
+    	float: left;
+   	 	margin-right: 50px;
+  	}
+  	#liquidContent .secondPart {
+  		margin: 1%;
+    	width: 425px;
+    	float: left;
+  	}
+  	
+  	#tourRecordContent #searchCondition {
+   	 	width: 400px;
+    	float: left;
+   	 	margin-right: 50px;
+  	}
+  	#tourRecordContent .ui-grid-a .ui-block-a {
+		width: 100%;
+	}
+	#tourRecordContent .ui-grid-a .ui-block-b {
+		width: 100%;
+	}
+  	#tourRecordContent #mmList {
+  		margin: 1%;
+    	width: 450px;
+    	float: left;
+  	}
+  	#tourRecordContent #pIDL,#tourRecordContent #pNameL,#tourRecordContent #fDateL,#tourRecordContent #tDateL{
+  		display: inline-block;
+  	}	
+  	
+  	#nurseRecordContent #searchCondition {
+   	 	width: 400px;
+    	float: left;
+   	 	margin-right: 50px;
+  	}
+  	#nurseRecordContent .ui-grid-a .ui-block-a {
+		width: 100%;
+	}
+	#nurseRecordContent .ui-grid-a .ui-block-b {
+		width: 100%;
+	}
+  	#nurseRecordContent #mmList {
+  		margin: 1%;
+    	width: 450px;
+    	float: left;
+  	}
+  	#nurseRecordContent #pIDL,#nurseRecordContent #pNameL,#nurseRecordContent #fDateL,#nurseRecordContent #tDateL{
+  		display: inline-block;
+  	}	
+  	
+  	#outInRecContent #searchCondition {
+   	 	width: 400px;
+    	float: left;
+   	 	margin-right: 50px;
+  	}
+  	#outInRecContent .ui-grid-a .ui-block-a {
+		width: 100%;
+	}
+	#outInRecContent .ui-grid-a .ui-block-b {
+		width: 100%;
+	}
+  	#outInRecContent #mmList {
+  		margin: 1%;
+    	width: 450px;
+    	float: left;
+  	}
+  	#outInRecContent #pIDL,#outInRecContent #pNameL,#outInRecContent #fDateL,#outInRecContent #tDateL{
+  		display: inline-block;
+  	}	
+}
+
+@media all and (max-width: 899px){
+	#matchMedicineContent #searchCondition {
+    	width: 100%;
+ 	}
+  	#matchMedicineContent #mmList {
+    	width: 100%;
+  	}
+  	
+  	#mMedicineDetailContent #docAdContent {
+    	width: 100%;
+ 	}
+  	#mMedicineDetailContent #executeRecord {
+    	width: 100%;
+  	}
+  	
+  	#executeContent #scanResContent {
+    	width: 100%;
+ 	}
+  	#executeContent #docAdContent {
+    	width: 100%;
+  	}
+  	#executeContent #executeRecord {
+    	width: 100%;
+  	}
+  	
+  	#tourContent #tCCol {
+    	width: 100%;
+ 	}
+  	#tourContent #tRCol {
+    	width: 100%;
+  	}
+  	
+  	#liquidContent .firstPart {
+    	width: 100%;
+ 	}
+  	#liquidContent .secondPart {
+    	width: 100%;
+  	}
+  	
+  	#tourRecordContent #searchCondition {
+    	width: 100%;
+ 	}
+  	#tourRecordContent #mmList {
+    	width: 100%;
+  	}
+  	#tourRecordContent #pIDL,#tourRecordContent #pNameL,#tourRecordContent #fDateL,#tourRecordContent #tDateL{
+  		display: none;
+  	}	
+  	
+  	#nurseRecordContent #searchCondition {
+    	width: 100%;
+ 	}
+  	#nurseRecordContent #mmList {
+    	width: 100%;
+  	}
+  	#nurseRecordContent #pIDL,#nurseRecordContent #pNameL,#nurseRecordContent #fDateL,#nurseRecordContent #tDateL{
+  		display: none;
+  	}	
+  	
+  	#outInRecContent #searchCondition {
+    	width: 100%;
+ 	}
+  	#outInRecContent #mmList {
+    	width: 100%;
+  	}
+  	#outInRecContent #pIDL#outInRecContent ,#pNameL,#outInRecContent #fDateL,#outInRecContent #tDateL{
+  		display: none;
+  	}	
+}*/

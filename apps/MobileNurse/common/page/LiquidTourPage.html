@@ -1,0 +1,70 @@
+
+<div id="sc">
+	<div id="multiColsModelArea"></div>
+	<div id="singleColModelArea">
+		<input type="text" id="ltSearchIDTxt" value="" placeholder="输入输液贴编码"/>
+		<!-- 手机平板版<a id="scanLiquidBtn" data-role="button" onclick="liquidTourPage.scanStrap()" data-inline="false" data-theme="g">扫描病人输液贴</a> -->
+		<ul id = "dAdCol" data-role="listview" data-inset="true" data-theme="f" style="margin:1%">
+			<li data-role="list-divider" data-theme="f" style="font-size: 1em">医嘱内容</li>
+			<li>病人姓名：<span id="dAdPName"></span></li>
+			<li>医嘱内容：<span id="dAdContent"></span></li>
+			<li>医嘱途径：<span id="dAdWay"></span></li>
+			<li>医嘱剂量：<span id="dAdDose"></span></li>
+			<li>次数&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp：<span id="dAdFrequency"></span></li>
+			<li>医嘱类别：<span id="dAdType"></span></li>
+			<li>执行时间：<span id="dAdExecTime"></span></li>				
+			<li>医生姓名：<span id="dAdDName"></span></li>
+			<li>
+				<select id="liquidConditionSel" data-theme="f" data-native-menu="false">
+					<option value="1">正常</option>
+					<option value="2">不正常</option>
+				</select>
+				<input id="confirmBtn" type="button" value="确定" onclick="liquidTourPage.savePatientLiquidTourRecord()" data-theme="g"/>				
+			</li>
+		</ul>
+		<ul id = "tRCol" data-role="listview" data-inset="true" data-theme="f" style="margin:1%">
+			<li data-role="list-divider" data-theme="f" style="font-size: 1em">巡视记录</li>
+			<li style="padding:0px"><div class="ui-grid-b" id="tourRecD"></div></li>
+		</ul>
+	</div>
+</div>
+
+	<!-- <div class="firstPart">
+		
+		<div id="dAdCol" data-role="collapsible-set" data-theme="c" data-content-theme="a" style="margin:1%;">
+			<div data-role="collapsible" data-collapsed="false" data-inset="true">
+				<h1>医嘱内容</h1>	
+				<ul data-role="listview" data-theme="c">
+					<li>病人姓名：<span id="dAdPName"></span></li>
+					<li>医嘱内容：<span id="dAdContent"></span></li>
+					<li>医嘱途径：<span id="dAdWay"></span></li>
+					<li>医嘱剂量：<span id="dAdDose"></span></li>
+					<li>次数&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp：<span id="dAdFrequency"></span></li>
+					<li>医嘱类别：<span id="dAdType"></span></li>
+					<li>执行时间：<span id="dAdExecTime"></span></li>
+					<li>医生姓名：<span id="dAdDName"></span></li>
+					<li>
+						<select id="liquidConditionSel" data-theme="b">
+							<option value="1">正常</option>
+							<option value="2">不正常</option>
+						</select>
+						<input id="confirmBtn" type="button" value="确定" onclick="liquidTourPage.savePatientLiquidTourRecord()"/>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="secondPart">
+		<div id="tRCol" data-role="collapsible-set" data-theme="c" data-content-theme="b" style="margin:1%;">
+			<div data-role="collapsible" data-collapsed="false">
+				<h1>巡视记录</h1>
+				<ul data-role="listview" data-theme="c">
+					<li>
+						<div class="ui-grid-b" id="liquidTourRecD">
+						</div>
+					</li>
+				</ul>	
+			</div>
+		</div>
+	</div> -->

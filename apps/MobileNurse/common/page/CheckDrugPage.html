@@ -1,0 +1,65 @@
+
+<div id="wrap">
+	<div id = "inputContent" data-role="content">
+		<div id="multiColsModelArea"></div>
+		<div id="singleColModelArea">
+			<input type="text" id="cdSearchIDTxt" value="" placeholder="输入病人ID"/>
+			<!-- 手机平板版<a id="inputBtn" data-role="button" onclick="checkDrugPage.scanDocAd()" data-inline="false" data-theme="g">扫描病人输液贴</a> -->
+			<div id="base-info-grid" class="ui-grid-d" style="margin:1%">
+				<div class="ui-block-a">
+					<div class="ui-bar ui-bar-c"><span id="bedIDS"></span></div>
+				</div>
+	    		<div class="ui-block-b">
+					<div class="ui-bar ui-bar-c"><span id="pNameS"></span></div>
+				</div>
+	     	 	<div class="ui-block-c">
+					<div class="ui-bar ui-bar-c"><span id="pAgeS"></span></div>
+				</div>
+	    		<div class="ui-block-d">
+					<div class="ui-bar ui-bar-c"><span id="pSexS"></span></div>
+				</div>
+				<div class="ui-block-e">
+					<div class="ui-bar ui-bar-c"><span id="pIDS"></span></div>
+				</div>
+			</div>
+			<ul id="docAdContent" data-role="listview" data-theme="f" data-inset="true" style="margin: 1%">
+				<li data-role="list-divider" data-theme="f" style="font-size: 1em">医嘱内容</li>
+				<li>病人姓名：<span id="dAdPName"></span></li>
+				<li>医嘱内容：<span id="dAdContent"></span></li>
+				<li>医嘱途径：<span id="dAdWay"></span></li>
+				<li>医嘱剂量：<span id="dAdDose"></span></li>
+				<li>次数&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp：<span id="dAdFrequency"></span></li>
+				<li>医嘱类别：<span id="dAdType"></span></li>
+				<li>执行时间：<span id="dAdExecTime"></span></li>
+				<li>医生姓名：<span id="dAdDName"></span></li>
+				<li style="padding:0px"><div id="checkDrugD"></div></li>
+			</ul>
+			<ul id="docAdRecord" data-role="listview" data-theme="f" data-inset="true" style="margin:1%">
+				<li data-role="list-divider" data-theme="f" style="font-size: 1em">医嘱记录</li>	
+				<li style="padding:0px">
+					<div id="execRecG" class="ui-grid-b">
+					</div>	
+				</li>											
+			</ul>
+		</div>
+		<!-- <div id="docAdContent" data-role="collapsible-set" data-theme="c" data-content-theme="a" style="margin:1%;">
+			<div data-role="collapsible" data-collapsed="false">
+				<h1>医嘱内容</h1>	
+				<ul data-role="listview" data-theme="c">
+					<li>病人姓名：<span id="dAdPName"></span></li>
+					<li>医嘱内容：<span id="dAdContent"></span></li>
+					<li>医嘱途径：<span id="dAdWay"></span></li>
+					<li>医嘱剂量：<span id="dAdDose"></span></li>
+					<li>次数&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp：<span id="dAdFrequency"></span></li>
+					<li>医嘱类别：<span id="dAdType"></span></li>
+					<li>执行时间：<span id="dAdExecTime"></span></li>
+					<li>医生姓名：<span id="dAdDName"></span></li>
+				</ul>
+			</div>
+	 	</div>	
+		<div id="checkDrugD">
+		</div>
+		<div id="execRecG" class="ui-grid-b">
+		</div>	 -->
+	</div>
+</div>

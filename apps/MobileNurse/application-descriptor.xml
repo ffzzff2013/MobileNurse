@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Licensed Materials - Property of IBM
+			 5725-G92 (C) Copyright IBM Corp. 2006, 2013. All Rights Reserved.
+			 US Government Users Restricted Rights - Use, duplication or
+             disclosure restricted by GSA ADP Schedule Contract with IBM Corp. --><!-- Attribute "id" must be identical to application folder name --><application xmlns="http://www.worklight.com/application-descriptor" id="MobileNurse" platformVersion="6.0.0">
+    <displayName>MobileNurse</displayName>
+    <description>MobileNurse</description>
+    <author>
+        <name>application's author</name>
+        <email>application author's e-mail</email>
+        <homepage>http://mycompany.com</homepage>
+        <copyright>Copyright My Company</copyright>
+    </author>
+    <mainFile>MobileNurse.html</mainFile>
+    <features>
+        <JSONStore/>
+    </features>
+    <thumbnailImage>common/images/thumbnail.png</thumbnailImage>
+    <iphone bundleId="com.MobileNurse" version="1.0">
+        <worklightSettings include="true"/>
+        <security>
+            <encryptWebResources enabled="false"/>
+            <testWebResourcesChecksum enabled="false" ignoreFileExtensions="png, jpg, jpeg, gif, mp4, mp3"/>
+        </security>
+    </iphone>
+    <android version="1.0">
+        <worklightSettings include="true"/>
+        <security>
+            <encryptWebResources enabled="false"/>
+            <testWebResourcesChecksum enabled="false" ignoreFileExtensions="png, jpg, jpeg, gif, mp4, mp3"/>
+            <publicSigningKey>Replace this text with the actual public signing key of the certificate used to sign the APK, available by using the 'Extract public signing key' wizard.</publicSigningKey>
+        </security>
+    </android>
+    <ipad bundleId="com.MobileNurse" version="1.0">
+        <worklightSettings include="true"/>
+        <security>
+            <encryptWebResources enabled="false"/>
+            <testWebResourcesChecksum enabled="false" ignoreFileExtensions="png, jpg, jpeg, gif, mp4, mp3"/>
+        </security>
+    </ipad>
+    <windowsPhone version="1.0">
+        <uuid>cd221705-96a9-4db3-86cd-92afd8924f35</uuid>
+    </windowsPhone>
+    <windowsPhone8 version="1.0">
+        <uuid>b415eb2d-b249-4f21-abe8-2ae1a0391f79</uuid>
+    </windowsPhone8>
+    <desktopBrowser cacheManifest="no-use" version="1.0"/>
+</application>

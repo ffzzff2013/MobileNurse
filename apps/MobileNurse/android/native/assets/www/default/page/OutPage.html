@@ -1,0 +1,80 @@
+
+<div id="sc">
+	<div id="outContent">
+		<div id="multiColsModelArea"></div>
+		<div id="singleColModelArea">
+			<div id="searchContent">
+   	 			<input type="text" id="opSearchIDTxt" value="" placeholder="输入病人ID"/>
+   	 			<!-- 手机平板版<input id="scanStrapBtn" type="button" value="扫描病人腕带" data-theme="g" onclick="outPage.scanStrap()"/> -->
+			</div>
+			<div id="oCCol">
+			<div id="base-info-grid" class="ui-grid-d" style="margin:1%">
+				<div class="ui-block-a">
+					<div class="ui-bar ui-bar-c"><span id="bedIDS"></span></div>
+				</div>
+	    		<div class="ui-block-b">
+					<div class="ui-bar ui-bar-c"><span id="pNameS"></span></div>
+				</div>
+	     	 	<div class="ui-block-c">
+					<div class="ui-bar ui-bar-c"><span id="pAgeS"></span></div>
+				</div>
+	    		<div class="ui-block-d">
+					<div class="ui-bar ui-bar-c"><span id="pSexS"></span></div>
+				</div>
+				<div class="ui-block-e">
+					<div class="ui-bar ui-bar-c"><span id="pIDS"></span></div>
+				</div>
+			</div>
+			<ul data-role="listview" data-theme="f" data-inset="true" style="margin:1%">
+				<li data-role="list-divider" data-theme="f" style="font-size: 1em">外出方式</li>	
+				<li>
+					<select id="outConditionSel" data-native-menu="false" data-theme="g">
+						<option value="null" data-placeholder="true">选择方式</option>
+						<option value="1">手术</option>
+						<option value="2">检查</option>
+						<option value="3">其他</option>
+					</select>
+					<input id="otherTxt" type="text" placeholder="请填写外出原因"/>
+					<input id="confirmBtn" type="button" value="确定" data-theme="c" onclick="outPage.savePatientOutRecord()"/>
+				</li>
+			</ul>
+			</div>
+			<ul id = "oRCol" data-role="listview" data-theme="f" data-inset="true" style="margin:1%">
+				<li data-role="list-divider" data-theme="f" style="font-size: 1em">外出记录</li>
+				<li style="padding:0px">
+					<div class="ui-grid-b" id="outInRecD">
+					</div>
+				</li>	
+			</ul>	
+		</div>
+	</div>
+</div>
+
+	<!--<div id="oCCol" data-role="collapsible-set" data-theme="c" data-content-theme="b" style="margin:1%;">
+		<div data-role="collapsible" data-collapsed="false">
+			<h1>外出方式</h1>
+			<ul data-role="listview" data-theme="c">
+				<li>
+					<select id="outConditionSel" data-native-menu="false" data-theme="b">
+						<option value="null" data-placeholder="true">选择方式</option>
+						<option value="1">手术</option>
+						<option value="2">检查</option>
+						<option value="3">其他</option>
+					</select>
+					<input id="otherTxt" type="text" placeholder="请填写外出原因"/>
+					<input id="confirmBtn" type="button" value="确定" data-theme="c" onclick="outPage.savePatientOutRecord()"/>
+				</li>
+			</ul>	
+		</div>
+	</div>
+	<div id="oRCol" data-role="collapsible-set" data-theme="c" data-content-theme="b" style="margin:1%;">
+		<div data-role="collapsible" data-collapsed="false">
+			<h1>外出记录</h1>
+			<ul data-role="listview" data-theme="c">
+				<li>
+					<div class="ui-grid-b" id="outRecD">
+					</div>
+				</li>
+			</ul>	
+		</div>
+	</div>  -->

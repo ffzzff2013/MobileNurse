@@ -1,0 +1,40 @@
+
+<div id="sc">
+	<div id="multiColsModelArea"></div>
+	<div id="singleColModelArea">
+		<div id="searchContent">
+    		<input type="text" name="snSearchIDTxt" id="snSearchIDTxt" value="" placeholder="输入病人ID"/>
+    		<!-- 手机平板版<input id="scanStrapBtn" onclick="specialNursePage.scanStrap()" type="button" value="扫描病人腕带" data-theme="g"/> -->
+		</div>
+		<div id="base-info-grid" class="ui-grid-d" style="margin:1%">
+			<div class="ui-block-a">
+				<div class="ui-bar ui-bar-c"><span id="bedIDS"></span></div>
+			</div>
+    		<div class="ui-block-b">
+				<div class="ui-bar ui-bar-c"><span id="pNameS"></span></div>
+			</div>
+     	 	<div class="ui-block-c">
+				<div class="ui-bar ui-bar-c"><span id="pAgeS"></span></div>
+			</div>
+    		<div class="ui-block-d">
+				<div class="ui-bar ui-bar-c"><span id="pSexS"></span></div>
+			</div>
+			<div class="ui-block-e">
+				<div class="ui-bar ui-bar-c"><span id="pIDS"></span></div>
+			</div>
+		</div>
+		<ul id = "specialNurseD" data-role="listview" data-inset="true" data-theme="f" style="margin:1%">
+			<li data-role="list-divider" data-theme="f" style="font-size: 1em">专科护理项</li>
+			<li style="padding:0px">
+				<fieldset id="specialNurseCG" data-role="controlgroup"></fieldset>
+				<input id="confirmBtn" type="button" value="确定" onclick="specialNursePage.confirm()" style="margin:5%" data-theme="g"/>
+			</li>
+		</ul>
+	</div>
+	<!-- <div id="specialNurseD">
+		<fieldset id="specialNurseCG" data-role="controlgroup" style="margin:1%">
+		</fieldset>
+		<input id="confirmBtn" type="button" value="确定" onclick="specialNursePage.confirm()" style="margin:5%"/>
+	</div> -->
+	
+</div>

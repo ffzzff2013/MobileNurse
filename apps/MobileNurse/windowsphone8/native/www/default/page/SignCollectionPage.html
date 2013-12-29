@@ -1,0 +1,422 @@
+
+<div id = "sc">
+	<div id="multiColsModelArea"></div>
+	<div id="singleColModelArea">
+		<ul id="signCol" data-role="listview" data-inset="true" data-theme="f" style="margin:1%">
+			<li data-role="list-divider" data-theme="f" style="font-size:1em">体征采集</li>
+			<li>
+				T&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<span style="display:inline-block;width:30%">
+					<input type="number" id="tT"/>
+				</span>
+				℃
+				<br/>
+						
+				R&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				<span style="display:inline-block;width:30%">
+					<input type="number" id="rT"/>
+				</span>
+				次/分
+				<br/>
+					
+				SPO2
+				<span style="display:inline-block;width:30%">
+					<input type="number" id="sPO2T"/>
+				</span>
+				%
+				<br/>
+						
+				意识&nbsp
+				<span style="display:inline-block;width:50%">
+					<select id="consciousnessSel" data-native-menu="false">
+						<option value="1">清醒</option>
+						<option value="2">不清醒</option>
+					</select>	
+				</span>
+				<br/>
+						
+				P/HR
+				<span style="display:inline-block;width:25%">
+					<input type="number" id="pHRHeightT"/>
+				</span>
+				/
+				<span style="display:inline-block;width:25%">
+					<input type="number" id="pHRLowT"/>
+				</span>
+				次/分
+				<br/>
+				
+				BP&nbsp&nbsp&nbsp&nbsp
+				<span style="display:inline-block;width:25%">
+					<input type="number" id="bPHeightT"/>
+				</span>
+				/
+				<span style="display:inline-block;width:25%">
+					<input type="number" id="bPLowT"/>
+				</span>
+				mmHg
+				<br/>
+			</li>
+			<li style="text-align:center">
+				<input type="button" value="保存" data-theme="g" onclick="signCollectionPage.saveSignCollection()"/>
+			</li>
+		</ul>
+	
+		<ul id="outInCol" data-role="listview" data-inset="true" data-theme="f" style="margin:1%">
+			<li data-role="list-divider" data-theme="f" style="font-size:1em">出入量采集</li>
+			<li>
+				尿量
+				<span style="display:inline-block;width:22%">
+					<input type="number" id="urineTxt"/>
+				</span>
+				ml&nbsp&nbsp
+				大便&nbsp&nbsp&nbsp&nbsp
+				<span style="display:inline-block;width:22%">
+					<input type="number" id="shitTxt"/>
+				</span>
+				<label for="shitTxt" style="display:inline-block">ml</label>
+				<br/>
+				痰量
+				<span style="display:inline-block;width:22%">
+					<input type="number" id="phlegmTxt"/>
+				</span>
+				ml&nbsp&nbsp
+				引流量
+				<span style="display:inline-block;width:22%">
+					<input type="number" id="drainageTxt"/>
+				</span>	
+				ml
+				<br/>
+				呕吐
+				<span style="display:inline-block;width:22%">
+					<input type="number" id="vomitTxt"/>
+				</span>
+				ml&nbsp&nbsp
+				腹透量
+				<span style="display:inline-block;width:22%">
+					<input type="number" id="belleyTxt"/>
+				</span>
+				ml
+				<br/>			
+				总出量
+				<span style="display:inline-block;width:50%">
+					<input type="number" id="outTxt"/>
+				</span>
+				ml
+				<br/>			
+				总入量
+				<span style="display:inline-block;width:50%">
+					<input type="number" id="inTxt"/>
+				</span>
+				ml
+			</li>
+			<li style="text-align:center">
+				<input type="button" value="保存" data-theme="g"/>
+			</li>
+		</ul>
+		
+		<ul id="situationCol" data-role="listview"  data-theme="f"  data-inset="true" style="margin:1%">
+			<li data-role="list-divider" data-theme="f" style="font-size:1em">特殊情况记录</li>
+			<li>
+				特殊情况记录<br/>
+				<input type="text"/>
+			</li>
+			<li style="text-align:center">
+				<input type="button" value="保存" data-theme="g"/>
+			</li>
+		</ul>
+	</div>
+</div>
+
+
+		<!-- <div id="inputColSet" data-role="collapsible-set" data-mini="false" data-theme="b" data-content-theme="b" style="margin:1%;"></div>
+		<div data-role="collapsible" data-collapsed="false">
+			<h1>体征采集</h1>
+			<ul data-role="listview">
+				<li>
+					T&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					<span style="display:inline-block;width:30%">
+						<input type="number" id="tT"/>
+					</span>
+					℃
+					<br/>
+					
+					R&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+					<span style="display:inline-block;width:30%">
+						<input type="number" id="rT"/>
+					</span>
+					次/分
+					<br/>
+				
+					SPO2
+					<span style="display:inline-block;width:30%">
+						<input type="number" id="sPO2T"/>
+					</span>
+					%
+					<br/>
+					
+					意识&nbsp
+					<span style="display:inline-block;width:50%">
+						<select id="consciousnessSel">
+							<option value="1">清醒</option>
+							<option value="2">不清醒</option>
+						</select>	
+					</span>
+					<br/>
+					
+					P/HR
+					<span style="display:inline-block;width:25%">
+						<input type="number" id="pHRHeightT"/>
+					</span>
+					/
+					<span style="display:inline-block;width:25%">
+						<input type="number" id="pHRLowT"/>
+					</span>
+					次/分
+					<br/>
+			
+					BP&nbsp&nbsp&nbsp&nbsp
+					<span style="display:inline-block;width:25%">
+						<input type="number" id="bPHeightT"/>
+					</span>
+					/
+					<span style="display:inline-block;width:25%">
+						<input type="number" id="bPLowT"/>
+					</span>
+					mmHg
+					<br/>
+				</li>
+				<li style="text-align:center">
+					<input type="button" value="保存" data-theme="g" onclick="signCollectionPage.saveSignCollection()"/>
+				</li>
+			</ul>
+		</div>
+		<div data-role="collapsible" data-collapsed="true">
+			<h1>出入量采集</h1>
+			<ul data-role="listview">
+				<li>
+					尿量
+					<span style="display:inline-block;width:22%">
+						<input type="number" id="urineTxt"/>
+					</span>
+					ml&nbsp&nbsp
+					大便&nbsp&nbsp&nbsp&nbsp
+					<span style="display:inline-block;width:22%">
+								<input type="number" id="shitTxt"/>
+					</span>
+					<label for="shitTxt" style="display:inline-block">ml</label>
+					<br/>
+					痰量
+					<span style="display:inline-block;width:22%">
+						<input type="number" id="phlegmTxt"/>
+					</span>
+					ml&nbsp&nbsp
+					引流量
+					<span style="display:inline-block;width:22%">
+						<input type="number" id="drainageTxt"/>
+					</span>	
+					ml
+					<br/>
+					呕吐
+					<span style="display:inline-block;width:22%">
+						<input type="number" id="vomitTxt"/>
+					</span>
+					ml&nbsp&nbsp
+					腹透量
+					<span style="display:inline-block;width:22%">
+						<input type="number" id="belleyTxt"/>
+					</span>
+					ml
+					<br/>			
+					总出量
+					<span style="display:inline-block;width:50%">
+						<input type="number" id="outTxt"/>
+					</span>
+					ml
+					<br/>			
+					总入量
+					<span style="display:inline-block;width:50%">
+						<input type="number" id="inTxt"/>
+					</span>
+					ml
+				</li>
+				<li style="text-align:center">
+					<input type="button" value="保存" data-theme="g"/>
+				</li>
+			</ul>
+		</div>
+		<div data-role="collapsible" data-collapsed="true">
+			<h1>特殊情况记录</h1>
+			<ul data-role="listview">
+				<li>
+					特殊情况记录<br/>
+					<input type="text"/>
+				</li>
+				<li style="text-align:center">
+					<input type="button" value="保存" data-theme="g"/>
+				</li>
+			</ul>
+		</div>
+	</div> -->
+	<!-- <div id="baseSignCol" data-role="collapsible-set" data-mini="true" data-theme="c" data-content-theme="b" style="margin:1%;">
+		<div data-role="collapsible" data-collapsed="false">
+			<h1>基本生命体征</h1>
+			体温
+			<span style="display:inline-block;width:17%">
+				<input type="number" id="temperatureTxt"/>
+			</span>
+			<span style="display:inline-block;width:36%">
+				<select id="temperatureTypeSel" name="temperatureTypeSel">
+					<option value="1">腕表</option>
+					<option value="2">腕表</option>
+					<option value="3">腕表</option>
+					<option value="4">腕表</option>
+				</select>	
+			</span>
+			<span style="front-size:0.7em;display:inline-block;width:31%">
+				<select id="temperatureValueSel" name="temperatureValueSel">
+					<option value="1">16</option>
+					<option value="2">17</option>
+					<option value="3">28</option>
+					<option value="4">19</option>
+				</select>
+			</span>
+			<br/>
+			
+			脉搏
+			<span style="display:inline-block;width:17%">
+				<input type="number" id="pulseTxt"/>
+			</span>
+			次/分&nbsp&nbsp&nbsp&nbsp
+			<span style="display:inline-block;width:48%">
+				<input type="checkbox" id="pulseCkb"/>
+				<label for="pulseCkb">脉搏短绌</label>
+			</span>
+			<br/>	
+			
+			心率
+			<span style="display:inline-block;width:17%">
+				<input type="number" id="heartTxt"/>
+			</span>
+			次/分&nbsp&nbsp&nbsp&nbsp
+			<span style="display:inline-block;width:48%">
+				<input type="checkbox" id="heartCkb"/>
+				<label for="heartCkb">起搏器</label>
+			</span>
+			<br/>	
+				
+			呼吸
+			<span style="display:inline-block;width:17%">
+				<input type="text" id="breathTxt"/>
+			</span>
+			次/分&nbsp&nbsp&nbsp&nbsp
+			<span style="display:inline-block;width:48%">
+				<input type="checkbox" id="breathCkb"/>
+				<label for="breathCkb">呼吸机</label>
+			</span>
+			<br/>	
+			
+			血压
+			<span style="display:inline-block;width:25%">
+				<input type="number" id="bpHeightTxt"/>
+			</span>
+			&nbsp/&nbsp
+			<span style="display:inline-block;width:25%">
+				<input type="number" id="bpLowTxt"/>
+			</span>
+			mmHg
+			<br/>
+			
+			血糖
+			<span style="display:inline-block;width:25%">
+				<input type="number" id="bsHeightTxt"/>
+			</span>
+			&nbsp/&nbsp
+			<span style="display:inline-block;width:25%">
+				<input type="number" id="bpLowTxt"/>
+			</span>
+			mmHg
+			<br/>
+			
+			血氧饱和度
+			<span style="display:inline-block;width:25%">
+				<input type="number" id="saturationTxt"/>
+			</span>
+			mmHg
+		</div>
+	</div>
+	
+	<div id="notOICol" data-role="collapsible-set" data-mini="true" data-theme="c" data-content-theme="b" style="margin:1%;">
+		<div data-role="collapsible" data-collapsed="false">
+			<h1>非出入量项目</h1>
+			KPS&nbsp评分
+			<span style="display:inline-block;width:60%">
+				<input type="number" id="kpsTxt"/>
+			</span>
+			<br/>
+			手术时间
+			<span style="display:inline-block;width:60%">
+				<input type="text" id="surgeryTimeTxt"/>
+			</span>
+		</div>
+	</div>
+	
+	<div id="baseTraitCol" data-role="collapsible-set" data-mini="true" data-theme="c" data-content-theme="b" style="margin:1%;">
+		<div data-role="collapsible" data-collapsed="false">
+			<h1>基本特征信息</h1>
+			身高
+			<span style="display:inline-block;width:20%">
+				<input type="number" id="heightTxt"/>
+			</span>
+			cm&nbsp&nbsp
+			体重&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<span style="display:inline-block;width:20%">
+				<input type="number" id="weightTxt"/>
+			</span>
+			kg
+			<br/>
+			腰围
+			<span style="display:inline-block;width:20%">
+				<input type="number" id="waistTxt">
+			</span>
+			cm&nbsp&nbsp
+			体表面积
+			<span style="display:inline-block;width:20%">
+				<input type="number" id="surfaceTxt"/>
+			</span>
+			m2
+		</div>
+	</div>
+	
+	<div id="pEyeCol" data-role="collapsible-set" data-mini="true" data-theme="c" data-content-theme="b" style="margin:1%;">
+		<div data-role="collapsible" data-collapsed="false">
+			<h1>病人瞳孔神智项目</h1>
+			自定义描述
+			<span style="display:inline-block;width:70%">
+				<textarea rows="8" id="discriptTxt"></textarea>
+			</span>
+		</div>
+	</div>
+	
+	<div id="specialCol" data-role="collapsible-set" data-mini="true" data-theme="c" data-content-theme="b" style="margin:1%;">
+		<div data-role="collapsible" data-collapsed="false">
+			<h1>特殊情况描述</h1>
+			<span style="display:inline-block;width:60%">
+				<select id="specialTxt" name="temperatureTypeSel">
+					<option value="1">请假</option>
+					<option value="2">缺勤</option>
+					<option value="3">请假</option>
+					<option value="4">请假</option>
+				</select>
+			</span>
+		</div>
+	</div>
+	
+	<div class="ui-grid-a">
+		<div class="ui-block-a">
+			<a data-role="button" id="saveBtn" data-theme="b" data-inline="false">保存</a>
+		</div>
+		<div class="ui-block-b">
+			<a data-role="button" id="recordBtn" data-theme="b" data-inline="false">整点记录</a>
+		</div>
+	</div> -->

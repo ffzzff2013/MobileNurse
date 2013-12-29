@@ -1,0 +1,48 @@
+
+<div id="sc">
+	<div id="tourContent">
+		<div id="multiColsModelArea"></div>
+		<div id="singleColModelArea">
+			<ul id = "tCCol" data-role="listview" data-inset="true" data-theme="f" style="margin:1%">
+				<li data-role="list-divider" data-theme="f" style="font-size: 1em">巡视情况</li>
+				<li>
+					<select id="tourConditionSel" data-native-menu="false" data-theme="g" data-native-menu="false">
+						<option value="1">正常</option>
+						<option value="2">不正常</option>
+					</select>
+					<input id="confirmBtn" type="button" value="确定" data-theme="g" onclick="dialyTourPage.savePatientDialyTourRecord()"/>
+				</li>
+			</ul>
+		
+			<ul id = "tRCol" data-role="listview" data-inset="true" data-theme="f" style="margin:1%">
+				<li data-role="list-divider" data-theme="f" style="font-size: 1em">巡视记录</li>
+				<li style="padding:0px"><div class="ui-grid-b" id="tourRecD"></div></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- <div id="tCCol" data-role="collapsible-set" data-theme="c" data-content-theme="b" style="margin:1%;">
+			<div data-role="collapsible" data-collapsed="false">
+				<h1>巡视情况</h1>
+				<ul data-role="listview" data-theme="c">
+					<li>
+						<select id="tourConditionSel" data-native-menu="false" data-theme="b">
+							<option value="1">正常</option>
+							<option value="2">不正常</option>
+						</select>
+						<input id="confirmBtn" type="button" value="确定" data-theme="c" onclick="dialyTourPage.savePatientDialyTourRecord()"/>
+					</li>
+				</ul>	
+			</div>
+		</div>
+		<div id="tRCol" data-role="collapsible-set" data-theme="c" data-content-theme="b" style="margin:1%;">
+			<div data-role="collapsible" data-collapsed="false">
+				<h1>巡视记录</h1>
+				<ul data-role="listview" data-theme="c">
+					<li>
+						<div class="ui-grid-b" id="dialyTourRecD">
+						</div>
+					</li>
+				</ul>	
+			</div>
+		</div> -->

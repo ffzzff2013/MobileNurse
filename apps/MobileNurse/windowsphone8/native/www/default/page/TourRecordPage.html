@@ -1,0 +1,109 @@
+
+<div id="sc">
+	<div id="tourRecordContent">
+	<div id="multiColsModelArea"></div>
+	<div id="singleColModelArea">
+		<ul id = "searchCondition" data-role="listview" data-inset="true" data-theme="f" style="margin:1%">
+			<li data-role="list-divider" data-theme="f" style="font-size: 1em">搜索条件</li>
+			<li style="padding:0px">
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<div class="ui-bar ui-bar-e" style="padding-bottom:0px;padding-top:0px">
+							<input type="text" id="patientIDTxt" data-mini="true" placeholder="病人ID"/>
+						</div>
+					</div>
+					<div class="ui-block-b">
+						<div class="ui-bar ui-bar-e" style="padding-bottom:0px;padding-top:0px">
+							<input type="text" id="patientNameTxt" data-mini="true" placeholder="姓名"/>
+						</div>
+					</div>
+					<div class="ui-block-a">
+						<div class="ui-bar ui-bar-e" style="padding-bottom:0px;padding-top:0px">
+							<input type="text" id="fromDate" data-mini="ture" placeholder="开始日期"/>
+						</div>
+					</div>
+					<div class="ui-block-b">
+						<div class="ui-bar ui-bar-e" style="padding-bottom:0px;padding-top:0px">
+							<input type="text" id="toDate" data-mini="ture" placeholder="结束日期"/>
+						</div>
+					</div>
+					<div class="ui-block-a">
+						<div class="ui-bar ui-bar-e" style="padding-bottom:0px;padding-top:0px">
+							<select id="tourTypeSelect" name="tourTypeSelect" data-mini="true" data-native-menu="false">
+								<option value="1">日常巡视</option>
+								<option value="2">输液巡视</option>
+							</select>
+						</div>
+					</div>
+					<div class="ui-block-b">
+						<div class="ui-bar ui-bar-e" style="padding-bottom:0px;padding-top:0px">
+							<a data-role="button" data-icon="search" data-iconpos="left" data-mini="true" onclick="tourRecordPage.searchTourRecord()">查找</a>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<ul id = "mmList" data-role="listview" data-inset="true" data-theme="f" style="margin:1%">
+			<li data-role="list-divider" data-theme="f" style="font-size: 1em">巡视记录</li>
+			<li style="padding:0px"><div class="ui-grid-d" id="tourRecordD"></div></li>
+		</ul>
+	</div>
+	</div>
+</div>
+
+<!-- <div id="searchCondition" data-role="collapsible-set" data-mini="true" data-theme="c" data-content-theme="b" style="margin:1%;">
+			<div data-role="collapsible" data-collapsed="false">
+				<h1>搜索条件</h1>
+				<div class="ui-grid-a">
+					<div class="ui-block-a">
+						<div class="ui-bar ui-bar-e">
+							<div data-role="fieldcontain" data-mini="true">
+								<label for="patientIDTxt" id="pIDL">病人ID</label>
+								<input type="text" id="patientIDTxt" data-mini="true" placeholder="病人ID"/>
+							</div>
+						</div>
+					</div>
+					<div class="ui-block-b">
+						<div class="ui-bar ui-bar-e">
+							<div data-role="fieldcontain" data-mini="true">
+								<label for="patientNameTxt" id="pNameL">姓名</label>
+								<input type="text" id="patientNameTxt" data-mini="true" placeholder="姓名"/>
+							</div>
+						</div>
+					</div>
+					<div class="ui-block-a">
+						<div class="ui-bar ui-bar-e">
+							<div data-role="fieldcontain" data-mini="true">
+								<label for="fromDate" id="fDateL">起始</label>
+								<input type="text" id="fromDate" data-mini="ture" placeholder="开始日期"/>
+							</div>
+						</div>
+					</div>
+					<div class="ui-block-b">
+						<div class="ui-bar ui-bar-e">
+							<div data-role="fieldcontain" data-mini="true">
+								<label for="toDate" id="tDateL">结束</label>
+								<input type="text" id="toDate" data-mini="ture" placeholder="结束日期"/>
+							</div>
+						</div>
+					</div>
+					<div class="ui-block-a">
+						<div class="ui-bar ui-bar-e">
+							<select id="tourTypeSelect" name="tourTypeSelect" data-mini="true" >
+								<option value="1">日常巡视</option>
+								<option value="2">输液巡视</option>
+							</select>
+						</div>
+					</div>
+					<div class="ui-block-b">
+						<div class="ui-bar ui-bar-e">
+							<a data-role="button" data-icon="search" data-iconpos="left" data-mini="true" onclick="tourRecordPage.searchTourRecord()">查找</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="mmList">
+		<div class="ui-grid-d" id="tourRecordD">
+		</div>	-->

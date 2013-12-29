@@ -1,0 +1,96 @@
+
+<div id="wrap">
+	<div id = "executeContent" data-role="content">
+		<div id="multiColsModelArea"></div>
+		<div id="singleColModelArea">
+			<div id="searchContent">
+				<label for="eSearchIDTxt" class="ui-hidden-accessible">搜索</label>
+    			<input type="text" name="search" id="eSearchIDTxt" value="" placeholder="输入病人ID号" data-theme="d" />
+    			<label for="scanTypeSel" class="ui-hidden-accessible">扫描</label>
+    			<select id="scanTypeSel" data-native-menu="false" data-theme="g">
+    				<option value="null" data-placeholder="true">扫描类型</option>
+    				<option value="1">腕带扫描</option>
+					<option value="2">输液贴扫描</option>
+				</select>
+			</div>
+			
+			<ul id = "scanResContent" data-role="listview" data-inset="true" data-theme="f" style="margin:1%">
+				<!-- <li data-role="list-header" data-theme="f">匹配信息</li> -->
+				<li data-role="list-divider" data-theme="f" style="font-size: 1em">腕带扫描结果</li>
+				<li>病人编号：<span id="pIDS"></span></li>
+				<li>病人姓名：<span id="pNameS"></span></li>
+				<li>病人性别：<span id="pSexS"></span></li>
+				<li>病人年龄：<span id="pAgeS"></span></li>
+				<li>病床号&nbsp&nbsp&nbsp&nbsp：<span id="pBedNoS"></span></li>
+				<li data-role="list-divider" data-theme="f" style="font-size: 1em">输液贴扫描结果</li>
+				<li>病人编号：<span id="pID2S"></span></li>
+				<li data-role="list-divider" data-theme="f" style="font-size: 1em">信息匹配结果</li>
+				<li><span id="matchResult">未匹配</span></li>
+				<li><input id="matchBtn" type="button" value="匹配" data-theme="g" onclick="executePage.match()"/></li>
+			</ul>
+			
+			<div id = "doctorAdviceDetailD">
+				<ul data-role="listview" data-theme="f" data-inset="true" style="margin: 1%">
+					<li data-role="list-divider" data-theme="f" style="font-size: 1em">医嘱内容</li>
+					<li>病人姓名：<span id="dAdPName"></span></li>
+					<li>医嘱内容：<span id="dAdContent"></span></li>
+					<li>医嘱途径：<span id="dAdWay"></span></li>
+					<li>医嘱剂量：<span id="dAdDose"></span></li>
+					<li>次数&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp：<span id="dAdFrequency"></span></li>
+					<li>医嘱类别：<span id="dAdType"></span></li>
+					<li>执行时间：<span id="dAdExecTime"></span></li>
+					<li>医生姓名：<span id="dAdDName"></span></li>
+					<li><div id="executeDocAdD"></div></li>
+				</ul>		
+				<ul data-role="listview" data-theme="f" data-inset="true" style="margin:1%">
+					<li data-role="list-divider" data-theme="f" style="font-size: 1em">医嘱记录</li>	
+					<li style="padding:0px"><div id="execRecG" class="ui-grid-b"></div></li>											
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+</div>
+			<!--  <div id="scanResContent" data-role="collapsible-set" data-theme="c" data-content-theme="a" style="margin:1%;">
+				<div data-role="collapsible" data-collapsed="false">
+					<h1>匹配信息</h1>	
+					<ul data-role="listview" data-theme="c">
+						<li data-role="list-divider">腕带扫描结果</li>
+						<li>病人编号：<span id="pIDS"></span></li>
+						<li>病人姓名：<span id="pNameS"></span></li>
+						<li>病人性别：<span id="pSexS"></span></li>
+						<li>病人年龄：<span id="pAgeS"></span></li>
+						<li>病床号&nbsp&nbsp&nbsp&nbsp：<span id="pBedNoS"></span></li>
+						<li data-role="list-divider">输液贴扫描结果</li>
+						<li>病人编号：<span id="pID2S"></span></li>
+						<li data-role="list-divider">信息匹配结果</li>
+						<li><span id="matchResult">未匹配</span></li>
+						<li><input id="matchBtn" type="button" value="匹配" data-theme="d" onclick="executePage.match()"/></li>
+					</ul>
+				</div>
+			</div>
+		
+			<div id = "doctorAdviceDetailD">
+				<div id="docAdContent" data-role="collapsible-set" data-theme="c" data-content-theme="a" style="margin:1%;">
+					<div data-role="collapsible" data-collapsed="false">
+						<h1>医嘱内容</h1>	
+						<ul data-role="listview" data-theme="c" data-inset="true">
+							<li>病人编号：<span id="dAdPName"></span></li>
+							<li>医嘱内容：<span id="dAdContent"></span></li>
+							<li>医嘱途径：<span id="dAdWay"></span></li>
+							<li>医嘱剂量：<span id="dAdDose"></span></li>
+							<li>次数&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp：<span id="dAdFrequency"></span></li>
+							<li>医嘱类别：<span id="dAdType"></span></li>
+							<li>执行时间：<span id="dAdExecTime"></span></li>
+							<li>医生姓名：<span id="dAdDName"></span></li>
+							<li><div id="executeDocAdD">
+							<input type='button' value='执行' onclick='executePage.hasExecuted()'/>
+							</div></li>
+						</ul>
+					</div>
+				</div>		
+				<div id="execRecG" class="ui-grid-b">
+				</div>
+			</div> -->
+
+

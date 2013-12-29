@@ -1,0 +1,36 @@
+
+<div id="wrap">
+	<!-- <div id = "header" data-role="header">
+		<a href="#menu"></a>
+		床位列表
+	</div> -->
+	<div id = "bedInfoContent" data-mini="true" data-role="content">
+
+		<div class="segmented-control ui-bar-d">
+			<div data-role="controlgroup" data-type="horizontal" data-mini="true">
+				<a data-role="button" id="signCollection" class="ui-control-active" onclick="inputDetailPage.selectInputSegment('1')">体征采集</a>
+				<a data-role="button" id="outInCollection" class="ui-control-inactive" onclick="inputDetailPage.selectInputSegment('2')">体征采集</a>
+				<a data-role="button" id="t" class="ui-control-inactive" onclick="inputDetailPage.selectInputSegment('3')">体征采集</a>
+			</div>
+        </div>	
+       <div id="base-info-grid" class="ui-grid-d" style="margin:1%">
+			<div class="ui-block-a">
+				<div class="ui-bar ui-bar-c"><span id="bedIDS"></span></div>
+			</div>
+    		<div class="ui-block-b">
+				<div class="ui-bar ui-bar-c"><span id="pNameS"></span></div>
+			</div>
+     	 	<div class="ui-block-c">
+				<div class="ui-bar ui-bar-c"><span id="pAgeS"></span></div>
+			</div>
+    		<div class="ui-block-d">
+				<div class="ui-bar ui-bar-c"><span id="pSexS"></span></div>
+			</div>
+			<div class="ui-block-e">
+				<div class="ui-bar ui-bar-c"><span id="pIDS"></span></div>
+			</div>
+		</div>
+        <div id = "segmentContent">
+        </div>
+	</div>
+</div>

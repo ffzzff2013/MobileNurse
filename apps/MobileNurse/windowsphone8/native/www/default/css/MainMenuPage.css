@@ -1,0 +1,9 @@
+
+/* Stylesheet content from css/MainMenuPage.css in folder common */
+#mainMenuContent .ui-grid-a .ui-block-a{
+	width:100%;
+}
+
+#mainMenuContent .as{
+	display: none;
+}

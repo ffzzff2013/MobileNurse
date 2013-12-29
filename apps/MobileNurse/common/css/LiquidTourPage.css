@@ -1,0 +1,18 @@
+.ui-grid-b .ui-block-a{
+	width: 25%;
+}
+
+.ui-grid-b .ui-block-b{
+	width: 50%;
+}
+
+.ui-grid-b .ui-block-c{
+	width: 25%;
+}
+
+#dAdCol {
+    width: 100%;
+}
+#tRCol {
+    width: 100%;
+}

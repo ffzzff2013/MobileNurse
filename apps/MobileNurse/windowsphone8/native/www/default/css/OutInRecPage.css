@@ -1,0 +1,65 @@
+
+/* Stylesheet content from css/OutInRecPage.css in folder common */
+.ui-grid-d .ui-block-a{
+	width: 20%;
+	height: 4em;
+}
+
+.ui-grid-d .ui-block-b{
+	width: 17%;
+	height: 4em;
+}
+
+.ui-grid-d .ui-block-c{
+	width: 20%;
+	height: 4em;
+}
+
+.ui-grid-d .ui-block-d{
+	width: 25%;
+	height: 4em;
+}
+
+.ui-grid-d .ui-block-e{
+	width: 18%;
+	height: 4em;
+}
+
+.ui-bar{
+	height: 4em;
+	font-size: 0.8em;
+}
+
+/*@media all and (min-width: 900px){
+	#searchCondition {
+   	 	width: 400px;
+    	float: left;
+   	 	margin-right: 50px;
+  	}
+  	.ui-grid-a .ui-block-a {
+		width: 100%;
+	}
+	.ui-grid-a .ui-block-b {
+		width: 100%;
+	}
+  	#mmList {
+  		margin: 1%;
+    	width: 450px;
+    	float: left;
+  	}
+  	#pIDL,#pNameL,#fDateL,#tDateL{
+  		display: inline-block;
+  	}	
+}
+
+@media all and (max-width: 899px){
+	#searchCondition {
+    	width: 100%;
+ 	}
+  	#mmList {
+    	width: 100%;
+  	}
+  	#pIDL,#pNameL,#fDateL,#tDateL{
+  		display: none;
+  	}	
+}*/

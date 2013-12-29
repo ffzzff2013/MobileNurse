@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+    	<meta charset="UTF-8">
+    	<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+		<meta name="author" content="www.frebsite.nl" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+		<meta name="robots" content="noindex, nofollow" />
+	
+		<title>jQuery.mmenu &raquo; Tutorial</title>
+
+ 		<!--<link type="text/css" rel="stylesheet" href="css/docs.css" /> -->
+		<link type="text/css" rel="stylesheet" href="css/mmenu.css" />
+		<link type="text/css" rel="stylesheet" href="css/mmenu-positioning.css"/>
+		<link rel="stylesheet" href="css/MainTheme.min.css"/>
+		<!-- <link rel="stylesheet" href="jqueryMobile/jquery.mobile.theme-1.3.2.min.css"/> -->
+		<link rel="stylesheet" href="jqueryMobile/jquery.mobile-1.3.2.min.css"/>
+    	<link rel="stylesheet" href="jqueryMobile/jquery.mobile.structure-1.3.2.min.css"/>
+    	<link rel="stylesheet" href="css/mobiscroll.core-2.6.2.css" />
+    	<link rel="stylesheet" href="css/mobiscroll.jqm-2.6.2.css" />
+    	<link rel="stylesheet" href="css/Common.css" />
+    	<link rel="stylesheet" href="css/MainMenuPage.css"/>
+    	<link rel="stylesheet" href="css/ModelControl.css"/>
+	
+		<script>window.$ = window.jQuery = WLJQ;</script>
+		<script type="text/javascript" src="js/jquery.mmenu.min.js"></script>
+		<script type="text/javascript" src="jqueryMobile/jquery.mobile-1.3.2.min.js"></script>
+		<script src="js/mobiscroll.core-2.6.2.js"></script>
+		<script src="js/mobiscroll.datetime-2.6.2.js"></script>
+		<script src="js/mobiscroll.jqm-2.6.2.js"></script>
+		<script src="js/initOptions.js"></script>
+    	<script src="js/dataObj/User.js"></script>
+    	<script src="js/dataObj/Patient.js"></script>
+    	<script src="js/dataObj/DoctorAdvice.js"></script>
+    	<script src="js/BarcodePlugin.js"></script>
+    	<script src="js/CollectionObject.js"></script>
+    	<script src="js/ModelControl.js"></script>
+    	<script src="js/MobileNurse.js"></script>
+    	<script src="js/Util.js"></script>
+    	<script src="js/LoginPage.js"></script>
+    	<script src="js/MainMenuPage.js"></script>
+    	<script src="js/BedListPage.js"></script>
+    	<script src="js/BedInfoPage.js"></script>
+    	<script src="js/BaseInfoPage.js"></script>
+    	<script src="js/DocInstructPage.js"></script>
+    	<script src="js/InputPage.js"></script>
+    	<script src="js/InputDetailPage.js"></script>
+    	<script src="js/OutInCollectionPage.js"></script>
+		<script src="js/SignCollectionPage.js"></script>
+		<script src="js/MatchMedicinePage.js"></script>
+    	<script src="js/MMedicineDetailPage.js"></script>
+    	<script src="js/CheckDrugPage.js"></script>
+		<script src="js/ExecutePage.js"></script>
+		<script src="js/TourScanPage.js"></script>
+		<script src="js/TourPage.js"></script>
+		<script src="js/DialyTourPage.js"></script>
+		<script src="js/LiquidTourPage.js"></script>
+		<script src="js/TourRecordPage.js"></script>
+		<script src="js/NursePage.js"></script>
+		<script src="js/BaseNursePage.js"></script>
+		<script src="js/SpecialNursePage.js"></script>
+		<script src="js/NurseRecordPage.js"></script>
+		<script src="js/OutInPage.js"></script>
+		<script src="js/OutPage.js"></script>
+		<script src="js/InPage.js"></script>
+		<script src="js/OutInRecPage.js"></script>
+		<script src="js/WorkCountPage.js"></script>
+		<script src="js/CureCountPage.js"></script>
+		<script src="js/NurseCountPage.js"></script>
+		<script src="js/messages.js"></script>
+    </head>
+    	
+    <body id="content">
+		<div data-role="page" id="page" style="background-image:url(images/ic_bg.png);background-size:100% 100%;">
+			<div data-role="header" id="header" data-theme="f">
+				<!-- <a href="#menu" onclick="menuClick()" data-icon="plus" data-iconpos="notext" data-theme="f"></a>-->
+				<a href="#menuPanel" onclick="menuClick()" data-icon="topbar-slide" data-iconpos="notext"></a>
+				<a id="topBarRBtn" onclick="refreshClick()" data-icon="topbar-refresh" data-iconpos="notext"></a>
+				<!-- <a id="returnBtn" data-icon="topbar-return" data-iconpos="notext" data-theme="f"></a> -->
+				<h1 id="hTitle" style="font-size:1.1em">首页</h1>	
+			</div>
+				
+			<div id="pageContent" data-role="content" style="padding:0px;">
+			</div>
+					
+			<!--  <nav id="menu">
+				<ul>
+					<li><a href="#" onclick="memuSelectItem('1')"><img src="images/thumbnail.png" height="40em" width="40em"/>床位列表</a></li>
+					<li><a href="#" onclick="memuSelectItem('2')"><img src="images/thumbnail.png" height="40em" width="40em"/>体征录入</a></li>
+					<li><a href="#" onclick="memuSelectItem('3')"><img src="images/thumbnail.png" height="40em" width="40em"/>配药</a></li>
+					<li><a href="#" onclick="memuSelectItem('4')"><img src="images/thumbnail.png" height="40em" width="40em"/>核药</a></li>
+					<li><a href="#" onclick="memuSelectItem('5')"><img src="images/thumbnail.png" height="40em" width="40em"/>执行</a></li>
+					<li><a href="#" onclick="memuSelectItem('6')"><img src="images/thumbnail.png" height="40em" width="40em"/>巡视</a></li>
+					<li><a href="#" onclick="memuSelectItem('7')"><img src="images/thumbnail.png" height="40em" width="40em"/>护理</a></li>
+					<li><a href="#" onclick="memuSelectItem('8')"><img src="images/thumbnail.png" height="40em" width="40em"/>出入管理</a></li>
+					<li><a href="#" onclick="memuSelectItem('9')"><img src="images/thumbnail.png" height="40em" width="40em"/>工作量统计</a></li>
+					<li><a href="#" onclick="memuSelectItem('10')"><img src="images/thumbnail.png" height="40em" width="40em"/>备忘录提醒</a></li>
+					<li><a href="#" onclick="memuSelectItem('11')"><img src="images/thumbnail.png" height="40em" width="40em"/>设置</a></li>
+				</ul>
+			</nav>-->
+		</div>
+		
+
+    	<!-- <script src="js/initOptions.js"></script>
+    	<script src="js/dataObj/User.js"></script>
+    	<script src="js/dataObj/Patient.js"></script>
+    	<script src="js/dataObj/DoctorAdvice.js"></script>
+    	<script src="js/BarcodePlugin.js"></script>
+    	<script src="js/CollectionObject.js"></script>
+    	<script src="js/ModelControl.js"></script>
+    	<script src="js/MobileNurse.js"></script>
+    	<script src="js/LoginPage.js"></script>
+    	<script src="js/MainMenuPage.js"></script>
+    	<script src="js/BedListPage.js"></script>
+    	<script src="js/BedInfoPage.js"></script>
+    	<script src="js/BaseInfoPage.js"></script>
+    	<script src="js/DocInstructPage.js"></script>
+    	<script src="js/InputPage.js"></script>
+    	<script src="js/InputDetailPage.js"></script>
+    	<script src="js/OutInCollectionPage.js"></script>
+		<script src="js/SignCollectionPage.js"></script>
+		<script src="js/MatchMedicinePage.js"></script>
+    	<script src="js/MMedicineDetailPage.js"></script>
+    	<script src="js/CheckDrugPage.js"></script>
+		<script src="js/ExecutePage.js"></script>
+		<script src="js/TourScanPage.js"></script>
+		<script src="js/TourPage.js"></script>
+		<script src="js/DialyTourPage.js"></script>
+		<script src="js/LiquidTourPage.js"></script>
+		<script src="js/TourRecordPage.js"></script>
+		<script src="js/NursePage.js"></script>
+		<script src="js/BaseNursePage.js"></script>
+		<script src="js/SpecialNursePage.js"></script>
+		<script src="js/NurseRecordPage.js"></script>
+		<script src="js/OutInPage.js"></script>
+		<script src="js/OutPage.js"></script>
+		<script src="js/InPage.js"></script>
+		<script src="js/OutInRecPage.js"></script>
+		<script src="js/WorkCountPage.js"></script>
+		<script src="js/CureCountPage.js"></script>
+		<script src="js/NurseCountPage.js"></script>
+		<script src="js/messages.js"></script> -->
+    </body>
+</html>

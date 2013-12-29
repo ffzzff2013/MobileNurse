@@ -1,0 +1,33 @@
+/*.ui-grid-b .ui-block-a{
+	width: 25%;
+}
+
+.ui-grid-b .ui-block-b{
+	width: 50%;
+}
+
+.ui-grid-b .ui-block-c{
+	width: 25%;
+}*/
+
+@media all and (min-width: 900px){
+	#tCCol {
+   	 	width: 425px;
+    	float: right;
+   	 	margin-right: 50px;
+  	}
+  	#tRCol {
+  		margin: 1%;
+    	width: 425px;
+    	float: left;
+  	}
+}
+
+@media all and (max-width:899px){
+	#tCCol {
+    	width: 100%;
+ 	}
+  	#tRCol {
+    	width: 100%;
+  	}
+}

@@ -1,0 +1,40 @@
+/*.segmented-control { 
+	text-align:center;
+}
+
+.segmented-control .ui-controlgroup {
+	margin: 0.2em; 
+}
+
+.ui-control-active, .ui-control-inactive {
+	border-style: solid;
+	border-color: gray;
+}
+
+.ui-control-active {
+	background: #BBB; 
+}
+
+.ui-control-inactive { 
+	background: #DDD; 
+}
+
+.ui-grid-d .ui-block-a{
+	width: 20%;
+}
+
+.ui-grid-d .ui-block-b{
+	width: 25%;
+}
+
+.ui-grid-d .ui-block-c{
+	width: 20%;
+}
+
+.ui-grid-d .ui-block-d{
+	width: 10%;
+}
+
+.ui-grid-d .ui-block-e{
+	width: 25%;
+}*/

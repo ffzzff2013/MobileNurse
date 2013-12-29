@@ -1,0 +1,53 @@
+
+<div id="sc">
+	<div id="multiColsModelArea"></div>
+	<div id="singleColModelArea">
+		<div id="searchContent">
+    		<input type="text" name="search" id="ipSearchIDTxt" value="" placeholder="输入病人ID" data-theme="d"/>
+    		<!-- 手机平板版<input id="scanStrapBtn" type="button" onclick="inPage.scanStrap()" value="扫描病人腕带" data-theme="g"/>-->
+		</div>
+		<div id="base-info-grid" class="ui-grid-d" style="margin:1%">
+			<div class="ui-block-a">
+				<div class="ui-bar ui-bar-c"><span id="bedIDS"></span></div>
+			</div>
+    		<div class="ui-block-b">
+				<div class="ui-bar ui-bar-c"><span id="pNameS"></span></div>
+			</div>
+     	 	<div class="ui-block-c">
+				<div class="ui-bar ui-bar-c"><span id="pAgeS"></span></div>
+			</div>
+    		<div class="ui-block-d">
+				<div class="ui-bar ui-bar-c"><span id="pSexS"></span></div>
+			</div>
+			<div class="ui-block-e">
+				<div class="ui-bar ui-bar-c"><span id="pIDS"></span></div>
+			</div>
+		</div>
+		<ul id = "iCCol" data-role="listview" data-theme="f" data-inset="true" style="margin:1%">
+			<li data-role="list-divider" data-theme="f" style="font-size: 1em">操作</li>
+			<li style="padding:0px"><input type="button" value="确认回室" onclick="inPage.savePatientInRecord()" data-theme="g"/></li>	
+		</ul>
+		<ul id = "iRCol" data-role="listview" data-theme="f" data-inset="true" style="margin:1%">
+			<li data-role="list-divider" data-theme="f" style="font-size: 1em">回室记录</li>
+			<li style="padding:0px">
+				<div class="ui-grid-b" id="outInRecD">
+				</div>
+			</li>	
+		</ul>	
+	</div>
+</div>
+
+<!--<div id="iCCol">
+		<input type="button" value="确认回室" onclick="inPage.savePatientInRecord()"/>
+	</div>
+	<div id="iRCol" data-role="collapsible-set" data-theme="c" data-content-theme="b" style="margin:1%;">
+		<div data-role="collapsible" data-collapsed="false">
+			<h1>回室记录</h1>
+			<ul data-role="listview" data-theme="c">
+				<li>
+					<div class="ui-grid-b" id="inRecD">
+					</div>
+				</li>
+			</ul>	
+		</div>
+	</div>  -->
